@@ -1,0 +1,149 @@
+What I did next — scanned your Jupiter folder and prepared a learning-project structure based on the notebooks found. Below is a mapped plan you can follow to fully master the professor's material. If you want, I can now scaffold these folders + starter notebooks.
+
+Files I scanned
+Notebooks found in Jupiter (representative):
+
+01-linear_regression.ipynb, 2024-11-11-linear_regression.ipynb
+04_training_linear_models.ipynb
+03_classification.ipynb, 2024-03-09-classification.ipynb
+05_support_vector_machines.ipynb, 05_svm_modified.ipynb
+06_decision_trees.ipynb
+07_ensemble_learning_and_random_forests.ipynb
+07_LLN.ipynb (Law of Large Numbers / probability experiments)
+2024-04-17-k-fold Cross Validation.ipynb
+2024-12-04-Scaling (minmax-standard).ipynb
+Several dated notebooks (2024-10-28.ipynb, 2024-11-06.ipynb, etc.) that look like lecture / exercise notebooks
+(If you have PDF lecture notes in the same folder I didn't see, tell me the path and I'll include them in the mapping.)
+
+High-level structure (exact format you requested)
+Learning Topic/
+Project Name 1/ Task(s) to be completed
+Project Name 2/ Task(s) to be completed
+...
+
+Below is the full plan. Each Learning Topic lists 2–4 projects (in increasing complexity) with concrete tasks, deliverables and acceptance criteria.
+
+Linear Regression/
+Project 1 — Linear regression from scratch /
+Tasks: derive and implement OLS normal equation and batch gradient descent; implement polynomial features; add L2 regularization (ridge) from theory; plot learning curves.
+Deliverable: notebook + Python module with functions fit(), predict(); short report interpreting coefficients.
+Acceptance: code reproduces sklearn LinearRegression/Ridge results (within numerical tolerance); learning curves show expected bias/variance trends.
+
+Project 2 — Applied regression experiments /
+Tasks: train on realistic datasets (California Housing, Diabetes), compare feature engineering strategies (polynomial, interactions), test regularization strength, evaluate MSE and R², calibration of residuals.
+Deliverable: notebook with experiments, reproducible train/test splits, plots and a short conclusions section.
+Acceptance: show improved test MSE vs baseline; document when polynomial features help vs overfitting.
+
+Training Linear Models & Regularization/
+Project 1 — Optimization & regularization study /
+Tasks: implement gradient descent (batch and SGD) for linear/logistic loss, study learning rates and convergence; implement L1/L2/ElasticNet and compare.
+Deliverable: interactive notebook (learning rate sweep), convergence plots.
+Acceptance: show expected convergence behavior and sparsity effect of L1.
+
+Classification (Logistic, metrics, multiclass)/
+Project 1 — Logistic regression (from scratch + sklearn) /
+Tasks: derive logistic loss, implement binary logistic regression (Newton and SGD), extend to softmax for multiclass; evaluate using accuracy, precision, recall, F1, ROC-AUC.
+Deliverable: notebook comparing implementations and metrics across datasets (Iris, synthetic, a tabular binary dataset).
+Acceptance: custom implementation matches sklearn results and ROC curves are produced.
+Project 2 — Imbalanced data handling /
+Tasks: class weighting, resampling (SMOTE/undersampling), threshold tuning, precision-recall curves.
+Deliverable: notebook and recommendations when each method helps.
+Acceptance: improved F1/PR-AUC on imbalanced datasets vs naive baseline.
+
+Support Vector Machines/
+Project 1 — SVM intuition & linear SVM /
+Tasks: implement linear SVM via hinge loss + SGD; visualize margins for 2D data; compare to sklearn.SVC (linear).
+Deliverable: notebook with visualizations and margin analysis.
+Acceptance: equivalent decision boundaries and comparable performance.
+Project 2 — Kernel SVM experiments /
+Tasks: experiment with polynomial and RBF kernels, tune C and gamma with cross-validation.
+Deliverable: kernel comparison table, decision boundary plots.
+Acceptance: show when kernel improves performance and a tuned hyperparameter set.
+
+Decision Trees/
+Project 1 — Decision tree (from-scratch CART/ID3) /
+Tasks: implement splitting criterion (gini/entropy/MSE), implement tree building with depth/pruning, visualize tree structure.
+Deliverable: small tree implementation to run on toy datasets; notebook comparing depth/pruning effects.
+Acceptance: performance comparable to sklearn DecisionTree on small datasets and correct splitting logic.
+Project 2 — Interpretability & feature importance /
+Tasks: compute feature importance, analyze overfitting, create partial dependence plots.
+Deliverable: notebook + visual explanations.
+Acceptance: show how tree depth affects variance and how feature importance aligns with domain knowledge.
+
+Ensemble Learning & Random Forests/
+Project 1 — Bagging & Random Forests /
+Tasks: implement bagging (ensemble of trees) from scratch wrapper; compare to sklearn.RandomForest; vary number of estimators, max_features.
+Deliverable: performance/variance comparison, OOB estimate demonstration.
+Acceptance: ensemble improves generalization vs single tree; OOB estimate approximates CV.
+Project 2 — Boosting (optional advanced) /
+Tasks: implement AdaBoost or gradient boosting at a basic level; compare to sklearn.
+Deliverable: notebook showing boosting behavior on weak learners.
+Acceptance: boosting achieves lower bias on certain datasets.
+
+Scaling & Preprocessing/
+Project 1 — Scaling experiments /
+Tasks: compare StandardScaler, MinMaxScaler, RobustScaler on models sensitive to scaling (KNN, SVM, gradient-based). Test pipeline behavior and leakage prevention.
+Deliverable: notebook with performance table and guidelines.
+Acceptance: show different scalers affect convergence/performance and document recommended defaults.
+
+Model Selection & Cross-Validation/
+Project 1 — k-fold, nested CV, hyperparameter search /
+Tasks: implement k-fold CV and nested CV from scratch; compare GridSearchCV and RandomizedSearchCV; evaluate variance of CV estimates.
+Deliverable: notebook with nested CV examples and best-practices notes.
+Acceptance: correct nested CV implementation and demonstration of selection bias if nested CV omitted.
+
+Probability / Statistics Foundations (LLN etc.)/
+Project 1 — Empirical LLN & CLT experiments /
+Tasks: write simulations demonstrating LLN and CLT (convergence plots, distribution of sample mean), bootstrap resampling.
+Deliverable: notebook with visual proof-of-concept experiments.
+Acceptance: clear plots showing convergence and sampling distributions.
+
+Practical Pipelines & Reproducibility/
+Project 1 — Build reusable ML pipeline /
+Tasks: build a pipeline for data ingestion, preprocessing, feature engineering, model training and evaluation; serialize model and pipeline (joblib), set seeds, environment capture (requirements.txt).
+Deliverable: reproducible notebook and Python package/module with CLI for training/prediction.
+Acceptance: one command reproduces key results on same data split.
+
+Capstone — End-to-end project (integration)/
+Project — Real-world dataset end-to-end /
+Tasks: pick a mid-sized dataset (e.g., UCI Adult, Kaggle House Prices, California Housing, or a tabular Kaggle challenge). Perform EDA, cleaning, feature engineering, baseline models, advanced models, ensembling, calibration, interpretability, short report and presentation. Add unit tests and a reproducible run script.
+Deliverable: fully-documented notebook, scripts for train/eval, README, short slide deck with results.
+Acceptance: meet a target metric (e.g., >X R² / desired AUC) or beat baseline benchmark; reproducible pipeline; clear documented decisions and error analysis.
+Suggested datasets & resources
+Built-in sklearn: Iris, digits, Boston (deprecated—use California Housing), diabetes, breast_cancer.
+UCI & Kaggle: Adult, Wine, Titanic, House Prices, MNIST / Fashion-MNIST (for vision/classification practice).
+Synthetic datasets: sklearn.make_regression / make_classification / blobs (for visual experiments).
+Tools: Python, NumPy, pandas, matplotlib/plotly, scikit-learn, imbalanced-learn (SMOTE), joblib, seaborn.
+Order & estimated time (rough)
+Follow this order to build foundations first and add complexity:
+
+Probability/LLN experiments — 1–2 days
+Linear regression + training linear models — 2–4 days
+Scaling & preprocessing — 1 day
+Classification (logistic) + metrics — 2–3 days
+Cross-validation & model selection — 1–2 days
+SVMs — 1–2 days
+Decision trees & Random Forests — 2–4 days
+Ensemble learning / boosting — 2–4 days
+Practical pipelines & reproducibility — 1–2 days
+Capstone (integrate everything) — 1–3 weeks (depending on scope)
+Total to “master” (intensive, hands-on): ~4–8 weeks at part-time study, less if full-time.
+
+Acceptance criteria (how you know you're done)
+For each project: code runs end-to-end, reproduces sklearn baselines where appropriate, and includes a short report that explains why chosen techniques worked or failed.
+You can explain the bias/variance trade-off and show empirical evidence (learning curves).
+You can implement at least one estimator from scratch (e.g., linear regression, logistic regression, decision tree) and show equivalence to library implementations.
+You can choose the right preprocessing and selection strategy for a dataset and defend it with results.
+Capstone: reproducible pipeline, report, and target metric met / improved over baseline.
+Edge cases & important pitfalls to cover in projects
+Data leakage (don’t fit scalers on full dataset).
+Class imbalance.
+Small-sample overfitting vs large-sample convergence.
+Feature collinearity and regularization needs.
+Hyperparameter overfitting (use nested CV).
+Computational limits (large datasets → use subsampling or streaming SGD).
+Next steps I can take for you
+Scaffold the folder structure in the repo (e.g., Learning Topic/ProjectName/README.md + starter notebook template + requirements).
+Create a single starter notebook template (with reproducible train/test split, seed, and evaluation block).
+Or generate one complete project (e.g., "Linear regression from scratch") as a reference.
+Which of these would you like me to do next? I can scaffold the full folder tree and add starter notebooks now.

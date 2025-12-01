@@ -1,0 +1,11 @@
+Title: Project 1 — Empirical LLN & CLT experiments
+
+Tasks:
+- Write simulations demonstrating LLN and CLT (convergence plots, distribution of sample mean)
+- Bootstrap resampling
+
+Deliverable:
+- Notebook with visual proof-of-concept experiments
+
+Acceptance:
+- Clear plots showing convergence and sampling distributions

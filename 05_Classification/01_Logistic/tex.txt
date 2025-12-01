@@ -1,0 +1,13 @@
+Title: Project 1 — Logistic regression (from scratch + sklearn)
+
+Tasks:
+- Derive logistic loss
+- Implement binary logistic regression (Newton and SGD)
+- Extend to softmax for multiclass
+- Evaluate using accuracy, precision, recall, F1, ROC-AUC
+
+Deliverable:
+- Notebook comparing implementations and metrics across datasets (Iris, synthetic, a tabular binary dataset)
+
+Acceptance:
+- Custom implementation matches sklearn results and ROC curves are produced

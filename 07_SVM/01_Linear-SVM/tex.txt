@@ -1,0 +1,12 @@
+Title: Project 1 — SVM intuition & linear SVM
+
+Tasks:
+- Implement linear SVM via hinge loss + SGD
+- Visualize margins for 2D data
+- Compare to sklearn.SVC (linear)
+
+Deliverable:
+- Notebook with visualizations and margin analysis
+
+Acceptance:
+- Equivalent decision boundaries and comparable performance

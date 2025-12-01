@@ -1,0 +1,11 @@
+Title: Project 1 — Scaling experiments
+
+Tasks:
+- Compare StandardScaler, MinMaxScaler, RobustScaler on models sensitive to scaling (KNN, SVM, gradient-based)
+- Test pipeline behavior and leakage prevention
+
+Deliverable:
+- Notebook with performance table and guidelines
+
+Acceptance:
+- Show different scalers affect convergence/performance and document recommended defaults

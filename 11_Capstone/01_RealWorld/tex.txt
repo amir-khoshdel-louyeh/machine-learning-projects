@@ -1,0 +1,20 @@
+Title: Capstone — Real-world dataset end-to-end
+
+Tasks:
+- Pick a mid-sized dataset (e.g., UCI Adult, Kaggle House Prices, California Housing)
+- Perform EDA, cleaning, feature engineering, baseline models, advanced models, ensembling, calibration, interpretability
+- Short report and presentation
+- Add unit tests and a reproducible run script
+
+Deliverable:
+- Fully-documented notebook, scripts for train/eval, README, short slide deck with results
+
+Acceptance:
+- Meet a target metric (e.g., >X R² / desired AUC) or beat baseline benchmark
+- Reproducible pipeline; clear documented decisions and error analysis
+
+Suggested datasets & resources:
+- Built-in sklearn: Iris, digits, California Housing, diabetes, breast_cancer
+- UCI & Kaggle: Adult, Wine, Titanic, House Prices, MNIST / Fashion-MNIST
+- Synthetic datasets: sklearn.make_regression / make_classification / blobs
+- Tools: Python, NumPy, pandas, matplotlib/plotly, scikit-learn, imbalanced-learn (SMOTE), joblib, seaborn

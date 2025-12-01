@@ -1,0 +1,12 @@
+Title: Project 1 — Optimization & regularization study
+
+Tasks:
+- Implement gradient descent (batch and SGD) for linear/logistic loss
+- Study learning rates and convergence
+- Implement L1/L2/ElasticNet and compare
+
+Deliverable:
+- Interactive notebook (learning rate sweep), convergence plots
+
+Acceptance:
+- Show expected convergence behavior and sparsity effect of L1

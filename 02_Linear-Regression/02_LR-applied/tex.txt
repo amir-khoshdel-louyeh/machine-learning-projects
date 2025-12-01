@@ -1,0 +1,14 @@
+Title: Project 2 — Applied regression experiments
+
+Tasks:
+- Train on realistic datasets (California Housing, Diabetes)
+- Compare feature engineering strategies (polynomial, interactions)
+- Test regularization strength
+- Evaluate MSE and R²; calibration of residuals
+
+Deliverable:
+- Notebook with experiments, reproducible train/test splits, plots and a short conclusions section
+
+Acceptance:
+- Show improved test MSE vs baseline
+- Document when polynomial features help vs overfitting

@@ -1,0 +1,11 @@
+Title: Project 2 — Boosting (optional advanced)
+
+Tasks:
+- Implement AdaBoost or gradient boosting at a basic level
+- Compare to sklearn
+
+Deliverable:
+- Notebook showing boosting behavior on weak learners
+
+Acceptance:
+- Boosting achieves lower bias on certain datasets

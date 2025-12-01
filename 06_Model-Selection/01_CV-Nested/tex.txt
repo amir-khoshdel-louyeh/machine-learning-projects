@@ -1,0 +1,12 @@
+Title: Project 1 — k-fold, nested CV, hyperparameter search
+
+Tasks:
+- Implement k-fold CV and nested CV from scratch
+- Compare GridSearchCV and RandomizedSearchCV
+- Evaluate variance of CV estimates
+
+Deliverable:
+- Notebook with nested CV examples and best-practices notes
+
+Acceptance:
+- Correct nested CV implementation and demonstration of selection bias if nested CV omitted

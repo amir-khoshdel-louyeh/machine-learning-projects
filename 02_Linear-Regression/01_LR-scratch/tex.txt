@@ -1,0 +1,15 @@
+Title: Project 1 — Linear regression from scratch
+
+Tasks:
+- Derive and implement OLS normal equation and batch gradient descent
+- Implement polynomial features
+- Add L2 regularization (ridge) from theory
+- Plot learning curves
+
+Deliverable:
+- Notebook + Python module with functions fit(), predict()
+- Short report interpreting coefficients
+
+Acceptance:
+- Code reproduces sklearn LinearRegression/Ridge results (within numerical tolerance)
+- Learning curves show expected bias/variance trends
